@@ -6,7 +6,7 @@ Name:		python-%{module}
 Version:	1.0
 Release:	1
 License:	LGPL
-Group:		Development/Languages/Python
+Group:		Libraries/Python
 Source0:	http://chardet.feedparser.org/download/%{module}-%{version}.tgz
 # Source0-md5:	29f69d097052a4eae3774382c234cf2b
 URL:		http://chardet.feedparser.org/
