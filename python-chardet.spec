@@ -1,7 +1,7 @@
 %define		module	chardet
 
 Summary:	Character encoding auto-detection in Python
-Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w pythonie
+Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w Pythonie
 Name:		python-%{module}
 Version:	1.0
 Release:	1
@@ -16,12 +16,11 @@ BuildRequires:	python-devel >= 1:2.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Character encoding auto-detection in Python.
-As smart as your browser.
+Character encoding auto-detection in Python. As smart as your browser.
 
 %description -l pl.UTF-8
-Automatyczne wykrywanie kodowania znaków w pythonie.
-Tak zmyślne jak w twojej przeglądarce.
+Automatyczne wykrywanie kodowania znaków w Pythonie. Tak zmyślne jak w
+przeglądarce.
 
 %prep
 %setup -q -n %{module}-%{version}
