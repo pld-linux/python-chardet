@@ -12,6 +12,8 @@ Source0:	http://chardet.feedparser.org/download/%{module}-%{version}.tgz
 URL:		http://chardet.feedparser.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,12 +28,12 @@ przeglądarce.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
