@@ -3,12 +3,12 @@
 Summary:	Character encoding auto-detection in Python
 Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w Pythonie
 Name:		python-%{module}
-Version:	1.0
+Version:	1.0.1
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://chardet.feedparser.org/download/%{module}-%{version}.tgz
-# Source0-md5:	29f69d097052a4eae3774382c234cf2b
+# Source0-md5:	f8c510a6fac300fe0ac9a0c24a76a7ba
 URL:		http://chardet.feedparser.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-devel >= 1:2.5
