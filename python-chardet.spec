@@ -13,7 +13,7 @@ URL:		https://pypi.python.org/pypi/chardet
 BuildRequires:	python >= 1:2.4
 BuildRequires:	python-devel >= 1:2.4
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
