@@ -36,7 +36,8 @@ BuildRequires:	python3-pytest
 %endif
 %endif
 %if %{with doc}
-BuildRequires:	sphinx-pdg
+BuildRequires:	python3-sphinx_rtd_theme
+BuildRequires:	sphinx-pdg-3
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -89,7 +90,8 @@ Dokumentacja API modułu Pythona chardet.
 
 %if %{with doc}
 PYTHONPATH=$(pwd) \
-%{__make} -C docs html
+%{__make} -C docs html \
+	SPHINXBUILD=sphinx-build-3
 %endif
 
 %install
