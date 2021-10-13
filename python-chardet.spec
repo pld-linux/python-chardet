@@ -9,13 +9,13 @@
 Summary:	Character encoding auto-detection in Python 2
 Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w Pythonie 2
 Name:		python-%{module}
-Version:	3.0.4
-Release:	5
+Version:	4.0.0
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/chardet/
 Source0:	https://files.pythonhosted.org/packages/source/c/chardet/%{module}-%{version}.tar.gz
-# Source0-md5:	7dd1ba7f9c77e32351b0a0cfacf4055c
+# Source0-md5:	bc9a5603d8d0994b2d4cbf255f99e654
 URL:		https://pypi.org/project/chardet/
 %if %{with python2}
 BuildRequires:	python >= 1:2.6
