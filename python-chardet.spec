@@ -18,8 +18,8 @@ Source0:	https://files.pythonhosted.org/packages/source/c/chardet/%{module}-%{ve
 # Source0-md5:	bc9a5603d8d0994b2d4cbf255f99e654
 URL:		https://pypi.org/project/chardet/
 %if %{with python2}
-BuildRequires:	python >= 1:2.6
-BuildRequires:	python-devel >= 1:2.6
+BuildRequires:	python >= 1:2.7
+BuildRequires:	python-devel >= 1:2.7
 BuildRequires:	python-setuptools
 %if %{with tests}
 BuildRequires:	python-hypothesis
@@ -27,8 +27,8 @@ BuildRequires:	python-pytest
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3 >= 1:3.3
-BuildRequires:	python3-devel >= 1:3.3
+BuildRequires:	python3 >= 1:3.5
+BuildRequires:	python3-devel >= 1:3.5
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-hypothesis
@@ -41,7 +41,7 @@ BuildRequires:	sphinx-pdg-3
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python-modules >= 1:2.6
+Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,7 +56,7 @@ przeglądarce.
 Summary:	Character encoding auto-detection in Python 3
 Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w Pythonie 3
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.3
+Requires:	python3-modules >= 1:3.5
 
 %description -n python3-chardet
 Character encoding auto-detection in Python. As smart as your browser.
