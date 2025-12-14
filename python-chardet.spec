@@ -58,6 +58,7 @@ Dokumentacja API modułu Pythona chardet.
 %py_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python} -m pytest test.py
 %endif
 
@@ -71,9 +72,10 @@ PYTHONPATH=$(pwd) \
 rm -rf $RPM_BUILD_ROOT
 
 %py_install
+
 %py_postclean
 
-mv $RPM_BUILD_ROOT%{_bindir}/chardetect{,-2}
+%{__mv} $RPM_BUILD_ROOT%{_bindir}/chardetect{,-2}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
