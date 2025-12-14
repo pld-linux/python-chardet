@@ -7,6 +7,7 @@
 Summary:	Character encoding auto-detection in Python 2
 Summary(pl.UTF-8):	Automatyczne wykrywanie kodowania znaków w Pythonie 2
 Name:		python-%{module}
+# keep 4.x here for python2 support
 Version:	4.0.0
 Release:	7
 License:	LGPL v2.1+
